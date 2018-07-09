@@ -1,0 +1,63 @@
+#projects {
+    background: #557A95;
+    color:  #eaebed;
+}
+
+#projects > h1 {
+    color: #eaebed;
+}
+
+@keyframes leftSlideIn {
+    0% {margin-right: 100%}
+    100% {margin-right: 0%}
+ }
+
+.projectDiv {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.slideIn {
+    animation-name: leftSlideIn;
+    animation-duration: 1s;
+}
+
+.projectDiv > img {
+    width: 800px;
+    height: 500px; 
+    border-radius: 15px;
+    box-shadow: #5D5C61 8px 8px 15px;
+}
+
+.descriptionDiv {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.descriptionDiv > * {
+    margin: 15px;
+}
+
+.descriptionDiv > h2 {
+    color: #5D5C61;
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+
+.descriptionDiv > a {
+    text-decoration: none;
+    color: #eaebed;
+
+}
+
+.descriptionDiv > a:hover {
+    color: #5D5C61;
+}

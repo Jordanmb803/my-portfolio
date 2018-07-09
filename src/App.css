@@ -1,0 +1,267 @@
+html{
+  background: #eaebed;
+}
+
+.App {
+  width: 100%;
+  box-sizing: border-box;
+  background: #eaebed;
+}
+
+.mainView {
+  width: 100%;
+  box-sizing: border-box;
+  background: #5D5C61;
+}
+
+.component {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: #5D5C61;
+  text-align: center;
+}
+
+.mainView > .component:nth-child(even) {
+  background: white;
+}
+
+.mainView > .component:nth-child(odd) {
+  background: #eaebed;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+#header {
+  color: darkgray;
+  padding: 15px;
+  height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(175deg, #eaebed, 9%, #7395AE, #557A95, #7395AE)
+}
+
+.nav {
+  height: 60px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.nav > h3 {
+  font-size: 20px;
+}
+
+.nav > h3:hover {
+  color: #eaebed;
+}
+
+.burger, .x{
+  position: fixed;
+  top: 35px;
+  right: 12px;
+
+}
+
+.burger:hover {
+  cursor: pointer;
+}
+
+.burger:hover > #patty {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  transition: ease-in-out;
+  transition-duration: .10s
+}
+
+.x {
+  height: 30px;
+  width: 25px;
+  display: flex;
+  padding: 1px;
+}
+
+.x:hover {
+  cursor: pointer;
+}
+
+#x1 {
+  transform: rotate(45deg);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 10px;
+  transition: ease-in;
+  transition-duration: .5s;
+}
+
+#x2 {
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 10px;
+  transition: linear;
+  transition-duration: .5s;
+}
+
+#hidden {
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.burgerRow {
+  background: #eaebed;
+  margin: 5px;
+  width: 30px;
+  height: 3px;
+  transition: ease-in-out;
+  transition-duration: .5s;
+}
+
+.burger:hover > .burgerRow,.x:hover > .burgerRow {
+  background: #5D5C61;
+}
+
+@keyframes dropIn {
+  0% {height: 0}
+  10% {height: 8vh}
+  20% {height: 16vh}
+  30% {height: 24vh}
+  40% {height: 32vh}
+  50% {height: 40vh}
+  60% {height: 48vh}
+  70% {height: 60vh}
+  80% {height: 68vh}
+  90% {height: 76vh}
+  100% {height: 80vh}
+}
+
+.menu {
+  position: fixed;
+  right: 0;
+  top: 75px;
+  height: 0;
+  width: 185px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  transition: ease-in-out;
+  transition-duration: 1s;
+  border: none;
+}
+
+.menuExpanded {
+  animation-name: dropIn;
+  animation-duration: 1s;
+  height: 80vh;
+
+}
+
+.menu > a {
+  color: darkgray;
+  font-size: 28px;
+}
+
+.menu > a:hover {
+  color: #5D5C61;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  color: darkgrey;
+  font-size: 26px;
+}
+
+h3:hover {
+  color: #eaebed;
+}
+
+
+.title {
+  color: #eaebed;
+  width: 40%;
+  height: 20%;
+  margin: auto;
+  position: relative;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#name {
+  font-size: 70px;
+}
+
+#description {
+  color: #BDBDBD;
+  font-size: 30px;
+  text-align: center;
+}
+
+.underline {
+  width: 10%;
+  height: 8px;
+  background: #5D5C61;
+  border-radius: 5px;
+  /* margin-top: 50px; */
+}
+
+.component > h1 {
+  width: 25%;
+  color: #557A95;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 50px;
+}
+
+.component > p {
+  width: 50%;
+  margin: 50px 0;
+  font-size: 20px;
+}
+
+.component  button {
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
+  background: #5D5C61;
+  color: #eaebed;
+  border: none;
+  outline: none;
+  box-shadow: #4D5C61 5px 5px 10px;
+}
+
+.component  button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.component  button:active {
+  outline: none;
+  border: none;
+}

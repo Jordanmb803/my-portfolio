@@ -1,0 +1,15 @@
+.projectComponent {
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background: #7395AE;
+    color: darkgray;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+#projectHeader {
+    color: #eaebed;
+}

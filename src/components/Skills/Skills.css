@@ -1,0 +1,39 @@
+#skillsIcons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    width: 70%;
+}
+
+#skillsUnderline {
+    width: 8%;
+}
+
+.skillDiv {
+    margin: 40px;
+}
+
+@keyframes wiggle {
+    0% {width: 130px; height: 130px;}
+    25% {width: 155px; height: 155px; transform: rotate(15deg)}
+    75% {width: 155px; height: 145px; transform: rotate(-15deg)}
+    100% {width: 130px; height: 130px; transform: rotate(0deg)}
+}
+
+.skillDiv > img:hover {
+    animation-name: wiggle;
+    animation-duration: 1s;
+}
+
+.skillDiv > img {
+    margin-bottom: 10px;
+    width: 130px;
+    height: 130px;
+    border-radius: 22px;
+}
+
+#circleIcon {
+    border-radius: 50%;
+}
