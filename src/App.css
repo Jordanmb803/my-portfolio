@@ -1,5 +1,7 @@
 html{
   background: #eaebed;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .App {
