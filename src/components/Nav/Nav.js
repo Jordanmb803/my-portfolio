@@ -12,15 +12,15 @@ class Nav extends Component {
     render() {
         return (
             <div className='navigationComponent'>
+                <div className={this.state.open ? 'x' : 'burger'}
+                    onClick={() => this.setState({ open: !this.state.open })}
+                >
+                    <div id={this.state.open ? 'x1' : 'topBun'} className='burgerRow'></div>
+                    <div id={this.state.open ? 'x2' : 'patty'} className='burgerRow'></div>
+                    <div id={this.state.open ? 'hidden' : 'bottomBun'} className='burgerRow'></div>
+                </div>
                 <div className='flexRow spaceBetween nav'>
                     <Link to='/'><h3>JordanBuonforte.com</h3></Link>
-                    <div className={this.state.open ? 'x' : 'burger'}
-                        onClick={() => this.setState({ open: !this.state.open })}
-                    >
-                        <div id={this.state.open ? 'x1' : 'topBun'} className='burgerRow'></div>
-                        <div id={this.state.open ? 'x2' : 'patty'} className='burgerRow'></div>
-                        <div id={this.state.open ? 'hidden' : 'bottomBun'} className='burgerRow'></div>
-                    </div>
                 </div>
                 <ul className={this.state.open ? "menu menuExpanded" : "menu"}>
                     <AnchorLink href='#header'><li>HOME</li></AnchorLink>
