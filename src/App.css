@@ -45,6 +45,10 @@ html{
   justify-content: space-between;
 }
 
+h3, p {
+  margin: 0;
+}
+
 #header {
   width: 100%;
   color: darkgray;
