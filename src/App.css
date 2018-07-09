@@ -45,10 +45,6 @@ html{
   justify-content: space-between;
 }
 
-h3, p {
-  margin: 0;
-}
-
 #header {
   width: 100%;
   color: darkgray;
@@ -242,7 +238,7 @@ h3:hover {
 }
 
 .component > h1 {
-  width: 25%;
+  width: 100%;
   color: #557A95;
   text-align: center;
   font-size: 60px;
