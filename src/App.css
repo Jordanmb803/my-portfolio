@@ -26,6 +26,7 @@ html{
   justify-content: flex-start;
   color: #5D5C61;
   text-align: center;
+  overflow: hidden;
 }
 
 .mainView > .component:nth-child(even) {
