@@ -8,7 +8,7 @@ class Skills extends Component {
             <div id='skillsComponent' className='component'>
                 <div id='skillsUnderline' className='underline'></div>
                 <h1>SKILLS</h1>
-                <p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Sed consequat amet dolor magna consequat. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
+                {/* <p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Sed consequat amet dolor magna consequat. Lorem ipsum dolor amet nullam sed etiam veroeros.</p> */}
                 <div id='skillsIcons'>
                     <Fade top>
                         <div className='skillDiv'>

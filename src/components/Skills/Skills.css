@@ -1,3 +1,7 @@
+#skillsComponent > * {
+    margin: 25px;
+}
+
 #skillsIcons {
     display: flex;
     flex-direction: row;

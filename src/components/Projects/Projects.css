@@ -1,3 +1,7 @@
+#projects > * {
+    margin: 40px;
+}
+
 #projects {
     background: #557A95;
     color:  #eaebed;
@@ -13,10 +17,10 @@
  }
 
 .projectDiv {
-    width: 90%;
+    width: 95%;
     display: flex;
-    justify-content: space-around;
-    /* margin: 50px; */
+    justify-content: space-between;
+    align-items: center;
 }
 
 .slideIn {
@@ -26,13 +30,13 @@
 
 .projectDiv > img {
     width: 45%;
-    height: 45%; 
+    height: 100%; 
     border-radius: 15px;
     box-shadow: #5D5C61 8px 8px 15px;
 }
 
 .descriptionDiv {
-    width: 35%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
