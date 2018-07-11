@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
 html{
   background: #eaebed;
   width: 100%;
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 .App {
@@ -48,11 +52,11 @@ html{
 
 #header {
   width: 100%;
-  color: darkgray;
   padding: 15px;
   height: 100vh;
   box-sizing: border-box;
-  background: linear-gradient(175deg, #eaebed, 9%, #7395AE, #557A95, #7395AE)
+  background: linear-gradient(175deg, #eaebed, 9%, #7395AE, #557A95, #7395AE);
+  background-image: url('./office-desk.jpeg')
 }
 
 .nav {
@@ -131,7 +135,7 @@ html{
 }
 
 .burgerRow {
-  background: #eaebed;
+  background: #7395AE;
   margin: 5px;
   width: 30px;
   height: 3px;
@@ -182,7 +186,7 @@ html{
 }
 
 .menu > a {
-  color: darkgray;
+  color: #7395AE;
   font-size: 28px;
 }
 
@@ -196,17 +200,17 @@ a {
 }
 
 h3 {
-  color: darkgrey;
+  color: #7395AE;
   font-size: 26px;
 }
 
 h3:hover {
-  color: #eaebed;
+  color: #5D5C61;
 }
 
 
 .title {
-  color: #eaebed;
+  color: #557A95;
   width: 40%;
   height: 20%;
   margin: auto;
@@ -225,7 +229,7 @@ h3:hover {
 }
 
 #description {
-  color: #BDBDBD;
+  color: #7395AE;
   font-size: 30px;
   text-align: center;
 }
