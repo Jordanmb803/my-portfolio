@@ -22,20 +22,20 @@ class CarouselComponentTwo extends Component {
             <div id='carousel'>
                 <div id='slideOne' className={this.state.slide === 0 ? 'slide' : 'invisable'}>
                     <div className='imageWIcons'>
-                        <FontAwesomeIcon icon='angle-right' className='nextIcon' onClick={()=> this.setState({slide: 1})}/>
-                        <FontAwesomeIcon icon='angle-left' className='previousIcon' onClick={() => this.setState({slide: 1})}/>
+                        <FontAwesomeIcon icon='angle-right' className='nextIcon' onClick={()=> this.setState({slide: 0})}/>
+                        <FontAwesomeIcon icon='angle-left' className='previousIcon' onClick={() => this.setState({slide: 0})}/>
                         <img src={spootify} alt='spootify' />
                     </div>
-                    <p>caption 1</p>
+                    <p>More details and pictures coming soon</p>
                 </div>
-                <div id='slideTwo' className={this.state.slide === 1 ? 'slide' : 'invisable'}>
+                {/* <div id='slideTwo' className={this.state.slide === 1 ? 'slide' : 'invisable'}>
                     <div className='imageWIcons'>
                         <FontAwesomeIcon icon='angle-right' className='nextIcon' onClick={ () => this.setState({slide: 0})} />
                         <FontAwesomeIcon icon='angle-left' className='previousIcon' onClick={() => this.setState({slide: 0})} />
                         <img src={spootify} alt='spootify' />
                     </div>
                     <p>caption 2</p>
-                </div>
+                </div> */}
                 {/* <div id='slideThree' className={this.state.slide === 2 ? 'slide' : 'invisable'}>
                     <div className='imageWIcons'>
                         <FontAwesomeIcon icon='angle-right' className='nextIcon' onClick={ () => this.setState({slide: 3})} />

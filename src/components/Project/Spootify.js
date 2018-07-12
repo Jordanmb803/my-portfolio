@@ -12,7 +12,10 @@ class Spootify extends Component {
 
         return (
             <div className='projectComponent'>
-                <Link to='/'><h3>JordanBuonforte.com</h3></Link>
+                 <div className='flexRow spaceBetween projectNav'>
+                    <Link to='/'><h3 id='projectWebsiteLink'>JordanBuonforte.com</h3></Link>
+                    <h1 id='projectHeader'>SPOTIFY CLONE</h1>
+                </div>
                 <CarouselComponentTwo />
             </div>
         )
