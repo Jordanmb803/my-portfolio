@@ -16,7 +16,7 @@ class AboutMe extends Component {
                     <p>"Would I rather be loved or feared? Easy. Both. I want people to be afraid of how much they love me." -Michael Scott</p>
                 </Fade>
                 <Fade left>
-                    <img src={moab} />
+                    <img src={moab} alt='profilePic'/>
                 </Fade>
                 {/* </div> */}
             </div>
