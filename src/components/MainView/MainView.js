@@ -4,6 +4,7 @@ import AboutMe from '../AboutMe/AboutMe';
 import Skills from '../Skills/Skills';
 import Projects from '../Projects/Projects';
 import ContactMe from '../ContactMe/ContactMe';
+import Footer from '../Footer/Footer';
 
 class MainView extends Component {
     render(){
@@ -14,6 +15,7 @@ class MainView extends Component {
                 <Skills />
                 <Projects />
                 <ContactMe />
+                <Footer />
             </div>
         )
     }
