@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Projects.css';
 import studiotracker from '../../assets/dance-teacher-main.jpeg';
-import spotify from '../../assets/spotify-clone.png';
 import Zoom from 'react-reveal/Zoom';
+import overview from '../../assets/spootify-overview.png';
 
 class Projects extends Component {
     constructor() {
@@ -26,7 +26,7 @@ class Projects extends Component {
                             {/* <a href='https://www.spootify.org'><p>spootify.com</p></a> */}
                             <Link to='/project/spootify'><button onClick={() => this.setState({ show: false })}>Learn More</button></Link>
                         </div>
-                        <img src={spotify} />
+                        <img src={overview} />
                     </div>
                     <div className='projectDiv'>
                         <img src={studiotracker} />
