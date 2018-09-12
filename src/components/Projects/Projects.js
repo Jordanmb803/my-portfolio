@@ -4,6 +4,7 @@ import './Projects.css';
 import studiotracker from '../../assets/dance-teacher-main.jpeg';
 import Zoom from 'react-reveal/Zoom';
 import overview from '../../assets/spootify-overview.png';
+import ReportsCategory from '../../assets/ReportsCategory.png';
 
 class Projects extends Component {
     constructor() {
@@ -18,6 +19,19 @@ class Projects extends Component {
                 <Zoom>
                     <div className='underline'></div>
                     <h1>PROJECTS</h1>
+                    <div className='projectDiv'>
+                        <img src={ReportsCategory} />
+                        <div className='descriptionDiv'>
+                            <p>Javascript | CSS | HMTL | React | Redux | Node.js </p>
+                            <h2>D2H Reports</h2>
+                            <p>D2H Reports gives employees to navigate efficently through company reports that are specific to them.</p>
+                            {/* <a href='https://www.spootify.org'><p>spootify.com</p></a> */}
+                            <div className='linkButtons'>
+                                <Link to='/project/d2hreports'><button onClick={() => this.setState({ show: false })}>Learn More</button></Link>
+                                <a href='https://github.com/Jordanmb803/vivint-reports'><button>Github</button></a>
+                            </div>
+                        </div>
+                    </div>
                     <div className='projectDiv'>
                         <div className='descriptionDiv'>
                             <p>Javascript | CSS | HMTL | React | Redux | Express | Node.js | Massive | Posgresql | Auth0</p>
